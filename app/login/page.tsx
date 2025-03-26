@@ -1,6 +1,10 @@
-import FinBooksLogo from "@/app/ui/finBooks-logo";
-import LoginForm from "@/app/ui/login-form";
-import { Suspense } from "react";
+import FinBooksLogo from '@/app/ui/finBooks-logo';
+import LoginForm from '@/app/ui/login-form';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Login',
+};
 
 export default function LoginPage() {
   return (
@@ -11,9 +15,7 @@ export default function LoginPage() {
             <FinBooksLogo />
           </div>
         </div>
-        <Suspense>
-          <LoginForm />
-        </Suspense>
+        <LoginForm />
       </div>
     </main>
   );
