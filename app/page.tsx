@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { lusitana } from './ui/fonts';
 import { Metadata } from 'next';
 
-// export const metadata: Metadata = {
-//   title: 'Dashboard',
-// };
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 export default function Page() {
   return (
