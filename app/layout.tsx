@@ -8,7 +8,6 @@ export const metadata: Metadata = {
     default: 'FinBooks Dashboard',
   },
   description: 'The simple way to handle loans efficiently',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
 
 export default function RootLayout({
