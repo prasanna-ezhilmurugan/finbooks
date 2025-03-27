@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { lusitana } from './ui/fonts';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Dashboard',
-};
+// export const metadata: Metadata = {
+//   title: 'Dashboard',
+// };
 
 export default function Page() {
   return (
@@ -31,6 +31,13 @@ export default function Page() {
       </div>
       <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
         {/* Add Hero Images Here */}
+        <Image
+            src={'/hero-desktop.jpg'}
+            width={1000}
+            height={760}
+            className="hidden md:block"
+            alt="hero image"
+          />
       </div>
     </div>
   </main>
